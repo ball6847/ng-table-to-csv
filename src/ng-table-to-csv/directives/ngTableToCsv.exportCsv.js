@@ -44,7 +44,7 @@
                 });
               },
               link      : function () {
-                return 'data:text/csv;charset=UTF-8,' + encodeURIComponent(data);
+                return 'data:text/csv;charset=UTF-8,%EF%BB%BF' + encodeURIComponent(data);
               }
             };
             $parse(attrs.exportCsv).assign(scope.$parent, csv);
